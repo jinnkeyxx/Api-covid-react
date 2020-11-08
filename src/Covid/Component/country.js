@@ -136,7 +136,7 @@ class Country extends React.Component{
                     return(
                         <Row >
                             <Col>
-                                <Table dataSource={context.virust.Countries} columns={this.state.Columns}/>
+                                <Table dataSource={context.virust.Countries} columns={this.state.Columns}  pagination={{ pageSize: 50 }} scroll={{ y: 540 }} />
                             </Col>
                         </Row>
                     )
